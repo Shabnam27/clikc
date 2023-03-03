@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <!--блоку, которому вы хотите чтоьы открывалась после клика ставите display: nonе. 
+        При помощи js ставите обработчик на кнопку, который при нажатии изменяет display: none на display: block.-->
+
+    <input type="button" value="Click" onmousedown="viewDiv()">
+    <div id="div1">Блок</div>
+
+    <style>
+        #div1{
+            display: none;
+        }
+    </style>
+
+    <script>
+        function viewDiv(){
+            document.getElementById("div1").style.display = "block";
+        };
+    </script>
+</body>
+</html>
